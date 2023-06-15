@@ -1,0 +1,225 @@
+       Tuple I
+1.Question
+
+Write a program to get the tuple elements and print it.
+
+Sample Input:
+3
+20
+10
+30
+
+Sample Output:
+(20, 10, 30)
+
+Code:
+n=int(input())
+tuple_1=[]
+for i in range(0,n):
+    element=int(input())
+    tuple_1.append(element)
+tuple_1=tuple(tuple_1)
+print(tuple_1)
+
+    Tuple II
+
+2.Questin
+
+Write a program to get the elements of tuple in a single line separated by space and print the tuple values.
+
+Sample Input:
+20 10 30
+
+Sample Output:
+20, 10, 30
+
+
+Code:
+
+x=[int(x) for x in input().split()]
+a=tuple(x)
+print(*a,sep=",")
+
+   Tuple III
+
+3.Question
+
+Write a program to get the tuple elements in a single line separated by spaces and print the number of elements in the given tuple.
+
+Sample Input:
+10 20 30
+
+Sample Output:
+3
+
+Code:
+
+x=[int(x) for x in input().split()]
+a=tuple(x)
+b=len(a)
+print(b)
+
+     Tuple IV
+
+4.Question
+
+Write a program to get n number of tuple elements from the user in separate lines and print the sum of their values using predefined method.
+
+Sample Input:
+3
+10
+20
+30
+
+Sample Output:
+60
+
+Code:
+a=[]
+n=int(input())
+for i in range(0,n):
+    elements=int(input())
+    a.append(elements)
+b=tuple(a)
+print(sum(b))
+
+         Tuple V
+
+5.Question
+
+Write a program to get n number of tuple elements from the user in separate line and print the maximum value of the given values.
+
+Sample Input:
+3
+20
+10
+30
+
+Sample Output:
+30
+
+Code:
+n=int(input())
+a=[]
+for i in range(0,n):
+    elements=int(input())
+    a.append(elements)
+tuple(a)
+b=max(a)
+print(b)
+
+    Tuple VI
+
+6.Question
+Write a program to get n number of values from user in separate line and print the minimum value of the given tuple.
+
+Sample Input:
+3
+20
+30
+10
+
+Sample Output:
+10
+
+Code:
+n=int(input())
+a=[]
+for i in range(0,n):
+    elements=int(input())
+    a.append(elements)
+tuple(a)
+b=min(a)
+print(b)
+
+      Tuple VII
+
+7.Question
+
+Write a program to get the tuple values in a single line separated by space and count the nuber of times the given x value is present in the given tuple.
+
+Sample Input:
+1 2 3 1 2 3 4 1 2 1
+1
+
+Sample Output:
+4
+
+Code:
+x=[int(x) for x in input().split()]
+a=int(input())
+for i in x:
+    y=x.count(a)
+print(y)
+
+        Tuple VIII
+
+8.Question
+
+Write a program to get tuple elements in a single line separated by spaces and print the sum of the elements without using sum() method.
+
+Sample Input:
+10 20 30
+
+Sample Output:
+60
+
+Code:
+x=[int(x) for x in input().split()]
+#a=int(input())
+a=tuple(x)
+b=sum(x)
+print(b)
+
+     Tuple IX
+
+9.Question
+
+Raju is a 3rd grade kid, he is struggling to find which is "even" number and which is a "odd" number. So, his teacher gave him a task to find how many even numbers and how many odd numbers are there in the given collection of values and print "Even" if even count is more than odd count, else print "Odd", if odd count is more and print "Equal" if both even count and odd count are same. Help Raju to understand the difference of even and odd.
+
+Sample Input:
+1 2 3 4 5
+
+Sample Output:
+Odd
+
+Code:
+a=0
+b=0
+c=input().split()
+for i in c:
+    i=int(i)
+    if i%2==0:
+        a+=1
+    else:
+        b+=1
+if a>b:
+    print("Even")
+elif b>a:
+    print("Odd")
+else:
+    print("Equal")
+
+       Tuple X
+
+10.Question
+
+Write the program to count the number of times the given number (x) is present in the given tuple list and print it's factorial value without using factorial() method.
+
+Sample Input:
+1 2 3 4 1 5 1
+1
+
+Sample Output:
+6
+
+Code:
+import math
+x=[int(x) for x in input().split()]
+a=tuple(x)
+c=int(input())
+for i in x:
+    y=x.count(c)
+    b=math.factorial(y)
+print(b)
+
